@@ -1,0 +1,39 @@
+
+<h1>Bilingual Children</h1>
+<owl-carousel-o [options]="customOptions">
+<!--
+  <ng-container *ngFor="let slide of slidesStore">
+    <ng-template carouselSlide >
+      <img [src]="slide.path">
+     
+    </ng-template>
+  </ng-container>
+-->
+<ng-container *ngFor="let slide of slidesStore">
+  <ng-template carouselSlide [id]="slide.id">
+    <img [src]="slide.path"  [title]="slide.title">
+  </ng-template>
+</ng-container>
+
+
+</owl-carousel-o>
+<section>
+  <article>
+    <h2>the right to play</h2>
+    <h3>Every child has aright to have time and somewhere safe to play . All children should be allowed to have privacy if they want to spend some time on thir own reading a book or drawing.</h3>
+  </article>
+  <article>
+    <h2>Play is powerfull</h2>
+    <h3>The games create lasting impact and empower children with the knowledge and skills to drive change in their lives.</h3>
+  </article>
+  <article>
+    <h2>learn through the game</h2>
+    <h3>Different types of play give children the opportunity to learn english or more languages</h3>
+  </article>
+</section>
+
+
+
+
+
+

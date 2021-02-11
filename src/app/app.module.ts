@@ -12,6 +12,8 @@ import {MatIconModule} from '@angular/material/icon';
 import { AboutmeModule } from './modules/aboutme/aboutme.module';
 import { DefaultModule } from './layouts/default/default.module';
 import { ContactModule } from './modules/contact/contact.module';
+import {MatButtonModule} from '@angular/material/button';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 
 
@@ -32,7 +34,12 @@ import { ContactModule } from './modules/contact/contact.module';
     MatIconModule, 
     DefaultModule,   
     AboutmeModule,
-    ContactModule
+    ContactModule,
+    MatButtonModule,
+    CarouselModule
+    
+
+    
         
   ],
   providers: [],

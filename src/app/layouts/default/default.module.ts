@@ -6,13 +6,14 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { HomeComponent } from 'src/app/modules/home/home.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { CarouselModule } from 'ngx-owl-carousel-o';
+
+import { HomeModule } from 'src/app/modules/home/home.module';
 
 
 @NgModule({
   declarations: [
-    DefaultComponent,
-    HomeComponent,
+    DefaultComponent
+    
     
 
 
@@ -24,7 +25,8 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     FlexLayoutModule,
     SharedModule,
     NgbModule,
-    CarouselModule
+    
+    
 
 
 

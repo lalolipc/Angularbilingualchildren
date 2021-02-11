@@ -6,13 +6,15 @@ import { AboutmeComponent } from './aboutme.component';
 import { AboutmaterialModule } from './aboutmaterials.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+
 @NgModule({
   declarations: [AboutmeComponent],
   imports: [
     CommonModule,
     AboutmeRoutingModule,
     AboutmaterialModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    
     
     
   ],exports: [

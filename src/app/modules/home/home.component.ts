@@ -16,7 +16,7 @@ export class HomeComponent {
     touchDrag: false,
     pullDrag: false,
     dots: false,
-    navSpeed: 700,
+    navSpeed: 500,
     navText: ['', ''],
     responsive: {
       0: {

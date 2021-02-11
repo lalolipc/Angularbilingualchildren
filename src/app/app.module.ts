@@ -14,6 +14,7 @@ import { DefaultModule } from './layouts/default/default.module';
 import { ContactModule } from './modules/contact/contact.module';
 import {MatButtonModule} from '@angular/material/button';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { HomeModule } from './modules/home/home.module';
 
 
 
@@ -36,7 +37,7 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     AboutmeModule,
     ContactModule,
     MatButtonModule,
-    CarouselModule
+    HomeModule
     
 
     

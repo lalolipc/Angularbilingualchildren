@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 
-console.warn("home aqui");
+
 import { HomeComponent } from './home.component';
 import { HomematerialModule } from './homematerials.module';
 @NgModule({
@@ -10,10 +10,12 @@ import { HomematerialModule } from './homematerials.module';
   imports: [
     HomematerialModule,
     BrowserAnimationsModule,
-    CarouselModule
+    CarouselModule,
+    
   ],
   exports: [
-    HomematerialModule
+    HomematerialModule,
+    CarouselModule
   ]
 })
 export class HomeModule { }

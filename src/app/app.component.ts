@@ -7,6 +7,8 @@ import { particles } from '../assets/particleConfig/particleConfig.json';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
+
+
 export class AppComponent implements OnInit {
   
 
@@ -21,6 +23,7 @@ export class AppComponent implements OnInit {
     this.showIndex = false;
   }
 
+  
   ngOnInit(): void {
     this.myStyle = {
       position: 'absolute',

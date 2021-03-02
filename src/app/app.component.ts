@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { particles } from '../assets/particleConfig/particleConfig.json';
 
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -44,5 +43,7 @@ export class AppComponent implements OnInit {
 
     
   }
+
+
   
 }

@@ -44,7 +44,12 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTreeModule} from '@angular/material/tree';
 import {OverlayModule} from '@angular/cdk/overlay';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { BrowserModule } from "@angular/platform-browser";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { FormsModule } from "@angular/forms";
+import { CommonModule } from "@angular/common";
 
+import { FlexLayoutModule } from '@angular/flex-layout';
 @NgModule({  
     imports: [
         A11yModule,
@@ -91,7 +96,9 @@ import {MatFormFieldModule} from '@angular/material/form-field';
         PortalModule,
         ScrollingModule,
         OverlayModule,
-        MatFormFieldModule
+        MatFormFieldModule,
+        BrowserModule, BrowserAnimationsModule, FormsModule, CommonModule,  FlexLayoutModule,
+    
       ],
       exports: [
         A11yModule,
@@ -138,7 +145,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
         PortalModule,
         ScrollingModule,
         OverlayModule,
-        MatFormFieldModule
+        MatFormFieldModule,
+        BrowserModule, BrowserAnimationsModule, FormsModule, CommonModule,  FlexLayoutModule,
     ]
 })
 

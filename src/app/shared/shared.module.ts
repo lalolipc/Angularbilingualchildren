@@ -13,6 +13,7 @@ import {MatMenuModule} from '@angular/material/menu';
   declarations: [
     MynavbarComponent,
     FooterComponent
+    
   ],
   imports: [
     CommonModule,

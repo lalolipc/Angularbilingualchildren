@@ -17,6 +17,7 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { HomeModule } from './modules/home/home.module';
 import { AdduserModule } from './modules/adduser/adduser.module';
 import { AdduserComponent } from './modules/adduser/adduser.component';
+import { NotificationService } from './shared/components/notification.service';
 
 
 
@@ -24,7 +25,8 @@ import { AdduserComponent } from './modules/adduser/adduser.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    
      
   ],
   imports: [
@@ -41,14 +43,8 @@ import { AdduserComponent } from './modules/adduser/adduser.component';
     ContactModule,
     MatButtonModule,
     HomeModule,
-        
-      
-    
-
-    
-        
   ],
-  providers: [],
+  providers: [NotificationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

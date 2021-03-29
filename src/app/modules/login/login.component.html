@@ -1,70 +1,31 @@
-
-<!--<div id="mylogin">
-<form action="">
-<p>
-<mat-form-field appearance="legacy">
-    <mat-label>email</mat-label>
-    <input matInput placeholder="example@gmail.com">
-    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-    <mat-hint>required</mat-hint>
-  </mat-form-field>
-</p>
-<p>
-  <mat-form-field appearance="legacy">
-    <mat-label>password</mat-label>
-    <input type="password" matInput placeholder="*****">
-    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-    <mat-hint>required</mat-hint>
-  </mat-form-field>
-</p>
-
-<button type="button" class="btn btn-secondary">Sign in</button>
-
-</form>
-</div>
--->
-<!--
-<div class="text-center">
-  <form [formGroup]="loginForm" class="form-signin" (ngSubmit)="onSubmit()">
-      <h1 class="h3 mb-3 font-weight-normal">Shopping Cart Sign in</h1>
-      <label for="inputEmail" class="sr-only">Email address</label>
-      <input matInput type="email" formControlName="email" id="inputEmail" class="form-control" placeholder="Email address" autofocus>
-      <label for="inputPassword" class="sr-only">Password</label>
-      <input type="password" formControlName="password" id="inputPassword" class="form-control" placeholder="Password" >        
-      <button class="btn btn-lg btn-primary btn-block" type="submit" [disabled]="!loginForm.valid">Sign in</button>
-  </form>
-</div>
-
--->
 <div id="mylogin">
   <form [formGroup]="loginForm" class="form-signin" (ngSubmit)="onSubmit()">
+    <mat-label>Login</mat-label>
+    <p>
+      <mat-form-field appearance="legacy">
 
-  <p>
-  <mat-form-field appearance="legacy">
-      <mat-label for="inputEmail" class="sr-only">email</mat-label>
-     <input matInput placeholder="example@gmail.com"  formControlName="email" id="inputEmail" class="form-control" placeholder="Email address" autofocus>
-      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-      <mat-hint>required</mat-hint>
-    </mat-form-field>
-  </p>
-  <p>
-    <mat-form-field appearance="legacy">
-      <mat-label for="inputPassword" class="sr-only">password</mat-label>
- <input type="password" matInput placeholder="*****" formControlName="password" id="inputPassword" class="form-control">
-      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-      <mat-hint>required</mat-hint>
-    </mat-form-field>
-  </p>
-  <!--<mat-form-field appearance="legacy">
-    <mat-label for="inputEmail" class="sr-only">email</mat-label>
-    <input matInput placeholder="example@gmail.com"  formControlName="email">
-  </mat-form-field>
-  <br>
-  <input type="text" matInput placeholder="*****" formControlName="password">
--->
-  <button class="btn btn-lg btn-primary btn-block btn-secondary" type="submit" [disabled]="!loginForm.valid">Sign in</button>
-  <div class="alert alert-success" role="alert">
-    {{ message }}
- </div> 
+
+        <mat-label for="inputEmail">Email</mat-label>
+        <input matInput placeholder="example@gmail.com" formControlName="email" id="inputEmail" class="form-control"
+          placeholder="Email address" autofocus>
+        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+        <mat-hint>*required</mat-hint>
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field appearance="legacy">
+        <mat-label for="inputPassword">Password</mat-label>
+        <input type="password" matInput placeholder="*****" formControlName="password" id="inputPassword"
+          class="form-control">
+        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+        <mat-hint>*required</mat-hint>
+      </mat-form-field>
+    </p>
+
+    <button class="btn btn-lg btn-primary btn-block btn-secondary" type="submit" [disabled]="!loginForm.valid">Sign
+      in</button>
+    <div class="alert alert-success" role="alert">
+      {{ message }}
+    </div>
   </form>
-  </div>
+</div>

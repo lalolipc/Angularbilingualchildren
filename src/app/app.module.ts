@@ -18,6 +18,10 @@ import { HomeModule } from './modules/home/home.module';
 import { AdduserModule } from './modules/adduser/adduser.module';
 import { AdduserComponent } from './modules/adduser/adduser.component';
 import { NotificationService } from './shared/components/notification.service';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { AuthInterceptorService } from './auth/auth-interceptor.service';
+import { LoginModule } from './modules/login/login.module';
+import { PhraseListComponent } from './shared/components/phrase-list/phrase-list.component';
 
 
 
@@ -26,6 +30,7 @@ import { NotificationService } from './shared/components/notification.service';
 @NgModule({
   declarations: [
     AppComponent,
+    PhraseListComponent
     
      
   ],
@@ -43,8 +48,21 @@ import { NotificationService } from './shared/components/notification.service';
     ContactModule,
     MatButtonModule,
     HomeModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    LoginModule
   ],
-  providers: [NotificationService],
+  //providers: [NotificationService],
+  providers:  [
+    
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: AuthInterceptorService,
+      multi: true
+    },
+     NotificationService
+   
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

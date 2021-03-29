@@ -7,12 +7,14 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatMenuModule} from '@angular/material/menu';
+import { PageNofoundComponent } from './components/page-nofound/page-nofound.component';
 
 
 @NgModule({
   declarations: [
     MynavbarComponent,
-    FooterComponent
+    FooterComponent,
+    PageNofoundComponent
     
   ],
   imports: [

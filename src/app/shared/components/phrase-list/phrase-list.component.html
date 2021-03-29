@@ -1,0 +1,27 @@
+<main class="py-5">
+  
+  <section id="listado" class="mb-5">
+       <div class="container">
+            <h2 class="mb-4">Phrase List</h2>
+            <table class="table table-striped">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Spanish</th>
+                  <th scope="col">English</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let phrase of productList">
+                  <th scope="row">{{ phrase.phraseId  }}</th>
+                  <td>{{ phrase.sp }}</td>
+                  <td>{{ phrase.eng }}</td>
+                </tr>                  
+              </tbody>
+            </table>
+       </div>
+  </section>
+</main>
+
+
+

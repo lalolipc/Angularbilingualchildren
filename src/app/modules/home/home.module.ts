@@ -12,6 +12,7 @@ import { HomematerialModule } from './homematerials.module';
     BrowserAnimationsModule,
     CarouselModule,
     
+    
   ],
   exports: [
     HomematerialModule,

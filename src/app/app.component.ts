@@ -10,7 +10,7 @@ import { particles } from '../assets/particleConfig/particleConfig.json';
 
 export class AppComponent implements OnInit {
   
-
+ 
   showIndex = true;
   myStyle: object = {};
   myParams: object = {};

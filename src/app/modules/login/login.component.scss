@@ -1,6 +1,7 @@
 #mylogin {
     display: flex;
   justify-content: center;
+  position: relative;
   }
 
 
@@ -12,4 +13,8 @@
   
   .example-button-row .mat-button-base {
     margin: 8px 8px 8px 0;
+  }
+
+  #inputEmail {
+   background: transparent;
   }

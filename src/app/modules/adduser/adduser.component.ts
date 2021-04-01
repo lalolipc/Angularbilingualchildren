@@ -35,7 +35,7 @@ export class AdduserComponent implements OnInit {
     student.password = this.password.value
 
     student.email = this.email.value;
-
+    this.message = "Please, wait a few seconds...";
 
     this.studentService.add(student)
       .then(response => {
